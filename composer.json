@@ -1,0 +1,25 @@
+{
+  "name": "denisristic/word-service-provider",
+  "type": "library",
+  "description": "A wrapper for PHPWord usage in Silex 2 projects",
+  "keywords": ["silex", "symfony", "PHPWord", "php", "word", "doc"],
+  "homepage": "https://github.com/denisristic/word-service-provider",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Denis Ristic",
+      "homepage": "http://denisristic.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "silex/silex": "~2.0",
+    "doctrine/dbal": "^2.5",
+    "phpoffice/word": "^1.8",
+  },
+  "autoload": {
+    "psr-0": {
+      "denisristic\\WordServiceProvider": "src/"
+    }
+  }
+}
