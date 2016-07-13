@@ -13,7 +13,7 @@ class Word
         $objPHPWord = new PhpWord(); // Create new PHPWord object
 
         $section = $objPHPWord->addSection();
-        Html::addHtml($section, $html);
+        Html::addHtml($section, $html, true);
 
         $objWriter = IOFactory::createWriter($objPHPWord, 'Word2007');
         ob_start();
